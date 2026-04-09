@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tienda de Peluches</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff0f5;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #ff69b4;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      padding: 15px;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .price {
+      color: green;
+      font-weight: bold;
+    }
+    button {
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #ff1493;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #ff69b4;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🧸 Tienda de Peluches</h1>
+  <p>Los más adorables para ti</p>
+</header>
+
+<div class="container">
+  <div class="card">
+    <img src="https://i.imgur.com/8Km9tLL.jpg" alt="Oso">
+    <h3>Oso de Peluche</h3>
+    <p class="price">$150 MXN</p>
+    <button onclick="comprar('Oso de Peluche')">Comprar</button>
+  </div>
+
+  <div class="card">
+    <img src="https://i.imgur.com/5tj6S7Ol.jpg" alt="Conejo">
+    <h3>Conejo Suave</h3>
+    <p class="price">$120 MXN</p>
+    <button onclick="comprar('Conejo Suave')">Comprar</button>
+  </div>
+
+  <div class="card">
+    <img src="https://i.imgur.com/N9bKXQp.jpg" alt="Panda">
+    <h3>Panda Tierno</h3>
+    <p class="price">$180 MXN</p>
+    <button onclick="comprar('Panda Tierno')">Comprar</button>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Tienda de Peluches</p>
+</footer>
+
+<script>
+  function comprar(producto) {
+    alert("Has comprado: " + producto + " 🧸");
+  }
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff0f5;
+      margin: 0;
+    }
+    header {
+      background-color: #ff69b4;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    nav {
+      text-align: center;
+      background-color: #ffb6c1;
+      padding: 10px;
+    }
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      margin: 0 15px;
+      padding: 8px 12px;
+      background-color: #ff69b4;
+      border-radius: 8px;
+    }
+    form {
+      max-width: 400px;
+      margin: 30px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    input, textarea {
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>📩 Contacto</h1>
+</header>
+
+<nav>
+  <a href="index.html">Inicio</a>
+  <a href="contacto.html">Contacto</a>
+</nav>
+
+<form onsubmit="enviarMensaje(event)">
+  <input type="text" placeholder="Tu nombre" required>
+  <input type="email" placeholder="Tu correo" required>
+  <textarea placeholder="Tu mensaje" required></textarea>
+  <button type="submit">Enviar</button>
+</form>
+
+<script>
+  function enviarMensaje(e) {
+    e.preventDefault();
+    alert("Mensaje enviado 💌");
+  }
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff0f5;
+      margin: 0;
+    }
+    header {
+      background-color: #ff69b4;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    nav {
+      text-align: center;
+      background-color: #ffb6c1;
+      padding: 10px;
+    }
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      margin: 0 15px;
+      padding: 8px 12px;
+      background-color: #ff69b4;
+      border-radius: 8px;
+    }
+    form {
+      max-width: 400px;
+      margin: 30px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    input, textarea {
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>📩 Contacto</h1>
+</header>
+
+<nav>
+  <a href="index.html">Inicio</a>
+  <a href="contacto.html">Contacto</a>
+</nav>
+
+<form onsubmit="enviarMensaje(event)">
+  <input type="text" placeholder="Tu nombre" required>
+  <input type="email" placeholder="Tu correo" required>
+  <textarea placeholder="Tu mensaje" required></textarea>
+  <button type="submit">Enviar</button>
+</form>
+
+<script>
+  function enviarMensaje(e) {
+    e.preventDefault();
+    alert("Mensaje enviado 💌");
+  }
+</script>
+
+</body>
+</html>
